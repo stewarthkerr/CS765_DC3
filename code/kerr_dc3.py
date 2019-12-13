@@ -10,9 +10,9 @@ import math
 
 
 #Read in data
-df = pd.read_csv("../data/Books.csv",)
-df = pd.read_csv("../data/all-nodes.csv",)
-df = pd.read_csv("../data/PetSupplies.csv")
+df = pd.read_csv("data/Books.csv",)
+df = pd.read_csv("data/all-nodes.csv",)
+df = pd.read_csv("data/PetSupplies.csv")
 
 
 #Function to count the depth of the node
