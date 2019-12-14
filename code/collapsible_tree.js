@@ -6,7 +6,7 @@ chart = {
   root.descendants().forEach((d, i) => {
     d.id = i;
     d._children = d.children;
-    if (d.depth && d.data.name.length !== 7) d.children = null;
+    if (d.depth) d.children = null;
   });
 
   const svg = d3.create("svg")
@@ -123,7 +123,7 @@ chart = {
 
 diagonal = d3.linkHorizontal().x(d => d.y).y(d => d.x)
 tree = d3.tree().nodeSize([dx, dy])
-data = FileAttachment("flare-2.json").json()
+data = FileAttachment("root_data_collapsible_tree.json").json()
 dx = 10
 dy = width / 6
 margin = ({top: 10, right: 120, bottom: 10, left: 40})

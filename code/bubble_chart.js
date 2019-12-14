@@ -67,7 +67,7 @@ chart = {
   return svg.node();
 }
 
-data = FileAttachment("../data/data_bubble1.json").json()
+data = FileAttachment("data_bubble1.json").json()
 
 pack = data => d3.pack()
     .size([width, height])
